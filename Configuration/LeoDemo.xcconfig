@@ -1,0 +1,13 @@
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
+
+SDKROOT = iphoneos
+
+ONLY_ACTIVE_ARCH = YES
+
+HEADER_SEARCH_PATHS = $(inherited)
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${SRCROOT}/Library" "$(SRCROOT)/../Carthage/Build/iOS"
+
+LIBRARY_SEARCH_PATHS = $(inherited)
+
+ENABLE_BITCODE = NO
