@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A5D10468470D239441AF6F1 /* Pods_Leo_LeoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E2786543BF2922A83A7A4F /* Pods_Leo_LeoDemo.framework */; };
-		223BF1CC1EE69241003E8720 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 223BF1CB1EE69241003E8720 /* main.c */; };
 		22C250F41EE4FEA4007A46BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C250F31EE4FEA4007A46BC /* AppDelegate.swift */; };
 		22C250F61EE4FEA4007A46BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C250F51EE4FEA4007A46BC /* ViewController.swift */; };
 		22C250F91EE4FEA4007A46BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C250F71EE4FEA4007A46BC /* Main.storyboard */; };
@@ -19,18 +18,6 @@
 		22C2513A1EE5335C007A46BC /* LeoDemo.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 22C251371EE5335C007A46BC /* LeoDemo.xcconfig */; };
 		22C2513D1EE53410007A46BC /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C2513C1EE53410007A46BC /* RevealServer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		223BF1C71EE69241003E8720 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		223BF1A41EE65365003E8720 /* Alamofire.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alamofire.podspec; sourceTree = "<group>"; };
@@ -47,7 +34,6 @@
 		223BF1BA1EE69137003E8720 /* cpod.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = cpod.sh; sourceTree = "<group>"; };
 		223BF1BB1EE69137003E8720 /* upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = upload.sh; sourceTree = "<group>"; };
 		223BF1C01EE69199003E8720 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		223BF1C91EE69241003E8720 /* CPod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPod; sourceTree = BUILT_PRODUCTS_DIR; };
 		223BF1CB1EE69241003E8720 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		223BF1D11EE6935B003E8720 /* Template.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Template.podspec; sourceTree = "<group>"; };
 		22C250F01EE4FEA4007A46BC /* LeoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,13 +53,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		223BF1C61EE69241003E8720 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22C250ED1EE4FEA4007A46BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				22C250F01EE4FEA4007A46BC /* LeoDemo.app */,
-				223BF1C91EE69241003E8720 /* CPod */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,24 +184,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		223BF1C81EE69241003E8720 /* CPod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 223BF1CD1EE69241003E8720 /* Build configuration list for PBXNativeTarget "CPod" */;
-			buildPhases = (
-				223BF1C51EE69241003E8720 /* Sources */,
-				223BF1C61EE69241003E8720 /* Frameworks */,
-				223BF1C71EE69241003E8720 /* CopyFiles */,
-				223BF1D01EE69250003E8720 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CPod;
-			productName = CPod;
-			productReference = 223BF1C91EE69241003E8720 /* CPod */;
-			productType = "com.apple.product-type.tool";
-		};
 		22C250EF1EE4FEA4007A46BC /* LeoDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C251021EE4FEA4007A46BC /* Build configuration list for PBXNativeTarget "LeoDemo" */;
@@ -256,11 +216,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "李理";
 				TargetAttributes = {
-					223BF1C81EE69241003E8720 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6SXXMB346X;
-						ProvisioningStyle = Automatic;
-					};
 					22C250EF1EE4FEA4007A46BC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 6SXXMB346X;
@@ -282,7 +237,6 @@
 			projectRoot = "";
 			targets = (
 				22C250EF1EE4FEA4007A46BC /* LeoDemo */,
-				223BF1C81EE69241003E8720 /* CPod */,
 			);
 		};
 /* End PBXProject section */
@@ -334,19 +288,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		223BF1D01EE69250003E8720 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/cpod.sh\"";
-		};
 		22C2513E1EE5343F007A46BC /* [CP] RevealServer */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,14 +335,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		223BF1C51EE69241003E8720 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				223BF1CC1EE69241003E8720 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22C250EC1EE4FEA4007A46BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,28 +366,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		223BF1CE1EE69241003E8720 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEVELOPMENT_TEAM = 6SXXMB346X;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		223BF1CF1EE69241003E8720 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEVELOPMENT_TEAM = 6SXXMB346X;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		22C251001EE4FEA4007A46BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22C251351EE5335C007A46BC /* LeoDemo.debug.xcconfig */;
@@ -589,14 +500,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		223BF1CD1EE69241003E8720 /* Build configuration list for PBXNativeTarget "CPod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				223BF1CE1EE69241003E8720 /* Debug */,
-				223BF1CF1EE69241003E8720 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		22C250EB1EE4FEA4007A46BC /* Build configuration list for PBXProject "LeoDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
