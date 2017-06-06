@@ -19,7 +19,7 @@ getInfomation() {
     getUpdate
 
     echo -e "\n${Default}================================================"
-    echo -e "  Whether or not to update frameworks  :  ${Cyan}${update}${Default}"
+    echo -e "  更新以下Frameworks  :  ${Cyan}${update}${Default}"
     echo -e "================================================\n"
 }
 
