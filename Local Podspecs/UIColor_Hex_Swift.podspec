@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # 使用Carthage打包Framework
-  s.osx.vendored_frameworks = 'Carthage/Build/macOS/HEXColor.framework'
-  s.tvos.vendored_frameworks = 'Carthage/Build/tvOS/HEXColor.framework'
-  s.watchos.vendored_frameworks = 'Carthage/Build/watchOS/HEXColor.framework'
-  s.ios.vendored_frameworks = 'Carthage/Build/iOS/HEXColor.framework'
+  s.osx.vendored_frameworks = "Carthage/Build/macOS/HEXColor.framework"
+  s.tvos.vendored_frameworks = "Carthage/Build/tvOS/HEXColor.framework"
+  s.watchos.vendored_frameworks = "Carthage/Build/watchOS/HEXColor.framework"
+  s.ios.vendored_frameworks = "Carthage/Build/iOS/HEXColor.framework"
   
   # s.prepare_command = 'carthage build --no-skip-current --platform ios'
   s.prepare_command = <<-CMD

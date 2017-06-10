@@ -14,17 +14,19 @@ abstract_target 'Leo' do
   pod 'Alamofire', podspec: 'Local Podspecs/Alamofire.podspec'
   pod 'ObjectMapper', podspec: 'Local Podspecs/ObjectMapper.podspec'
   pod 'SwiftRichString', podspec: 'Local Podspecs/SwiftRichString.podspec'
-  pod 'UIColor_Hex_Swift', podspec: 'Local Podspecs/UIColor_Hex_Swift.podspec'
+  #pod 'UIColor_Hex_Swift', podspec: 'Local Podspecs/UIColor_Hex_Swift.podspec'
 
   pod 'Result', podspec: 'Local Podspecs/Result.podspec'
   pod 'ReactiveSwift', podspec: 'Local Podspecs/ReactiveSwift.podspec'
   pod 'ReactiveCocoa', podspec: 'Local Podspecs/ReactiveCocoa.podspec'
   pod 'SnapKit', podspec: 'Local Podspecs/SnapKit.podspec'
 
-  #开发模式
-  pod 'LeoApi', :path => '../LeoApi'
+  #源码-开发模式
   pod 'LeoCommon', :path => '../LeoCommon'
 
+  #源码模式
+  pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+  
   target 'LeoDemo'
 end
 
