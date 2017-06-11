@@ -13,3 +13,4 @@ github "Orderella/PopupDialog" ~> 0.5
 github "IcaliaLabs/Presentr"
 github "SVProgressHUD/SVProgressHUD"
 github "kenshincui/AlamofireURLCache"
+

@@ -1,26 +1,27 @@
-Pod::Spec.new do |spec|
-  spec.name = 'SwiftRichString'
-  spec.version = '0.9.8'
-  spec.summary = 'Elegant and painless Attributed String (NSAttributedString) in Swift'
-  spec.homepage = 'https://github.com/malcommac/SwiftRichString'
-  spec.license = { :type => 'MIT', :file => 'LICENSE' }
-  spec.author = { 'Daniele Margutti' => 'me@danielemargutti.com' }
-  spec.social_media_url = 'http://twitter.com/danielemargutti'
-  spec.source = { :git => 'https://github.com/malcommac/SwiftRichString.git', :tag => "#{spec.version}" }
-  #spec.source_files = 'Sources/**/*.swift'
-  spec.ios.deployment_target = '8.0'
-  spec.tvos.deployment_target = '9.0'
-  spec.requires_arc = true
-  spec.module_name = 'SwiftRichString'
+Pod::Spec.new do |s|
+  s.name = 'SwiftRichString'
+  s.version = '0.9.8'
+  s.summary = 'Elegant and painless Attributed String (NSAttributedString) in Swift'
+  s.homepage = 'https://github.com/malcommac/SwiftRichString'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
+  s.author = { 'Daniele Margutti' => 'me@danielemargutti.com' }
+  s.social_media_url = 'http://twitter.com/danielemargutti'
+  s.source = { :git => 'https://github.com/malcommac/SwiftRichString.git', :tag => "#{s.version}" }
+  #s.source_files = 'Sources/**/*.swift'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
+  s.requires_arc = true
+  s.module_name = 'SwiftRichString'
 
   # 使用Carthage打包Framework
-  spec.osx.vendored_frameworks = 'Carthage/Build/macOS/SwiftRichString.framework'
-  spec.tvos.vendored_frameworks = 'Carthage/Build/tvOS/SwiftRichString.framework'
-  spec.watchos.vendored_frameworks = 'Carthage/Build/watchOS/SwiftRichString.framework'
-  spec.ios.vendored_frameworks = 'Carthage/Build/iOS/SwiftRichString.framework'
-  # spec.prepare_command = 'carthage build --no-skip-current --platform ios'
-  spec.prepare_command = <<-CMD
+  s.osx.vendored_frameworks = "Carthage/Build/macOS/#{s.name}.framework"
+  s.tvos.vendored_frameworks = "Carthage/Build/tvOS/#{s.name}.framework"
+  s.watchos.vendored_frameworks = "Carthage/Build/watchOS/#{s.name}.framework"
+  s.ios.vendored_frameworks = "Carthage/Build/iOS/#{s.name}.framework"
+
+  # s.prepare_command = 'carthage build --no-skip-current --platform ios'
+  s.prepare_command = <<-CMD
                         mkdir -p Carthage/Build/iOS
-                        ln -s "${TMP_PROJECT_DIR}/Carthage/Build/iOS/SwiftRichString.framework" "Carthage/Build/iOS/SwiftRichString.framework"
+                        ln -s "${TMP_PROJECT_DIR}/Carthage/Build/iOS/#{s.name}.framework" "Carthage/Build/iOS/#{s.name}.framework"
                       CMD
 end

@@ -14,7 +14,8 @@ abstract_target 'Leo' do
   pod 'Alamofire', podspec: 'Local Podspecs/Alamofire.podspec'
   pod 'ObjectMapper', podspec: 'Local Podspecs/ObjectMapper.podspec'
   pod 'SwiftRichString', podspec: 'Local Podspecs/SwiftRichString.podspec'
-  #pod 'UIColor_Hex_Swift', podspec: 'Local Podspecs/UIColor_Hex_Swift.podspec'
+  pod 'SDWebImage', podspec: 'Local Podspecs/SDWebImage.podspec'
+  pod 'Presentr', podspec: 'Local Podspecs/Presentr.podspec'
 
   pod 'Result', podspec: 'Local Podspecs/Result.podspec'
   pod 'ReactiveSwift', podspec: 'Local Podspecs/ReactiveSwift.podspec'

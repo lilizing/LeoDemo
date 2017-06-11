@@ -28,14 +28,15 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { "OTHER_SWIFT_FLAGS[config=Release]" => "-suppress-warnings" }
 
   # 使用Carthage打包Framework
-  s.osx.vendored_frameworks = 'Carthage/Build/macOS/ReactiveCocoa.framework'
-  s.tvos.vendored_frameworks = 'Carthage/Build/tvOS/ReactiveCocoa.framework'
-  s.watchos.vendored_frameworks = 'Carthage/Build/watchOS/ReactiveCocoa.framework'
-  s.ios.vendored_frameworks = 'Carthage/Build/iOS/ReactiveCocoa.framework'
-  # s.prepare_command = 'carthage update --platform ios && carthage build --no-skip-current --platform ios'
+  s.osx.vendored_frameworks = "Carthage/Build/macOS/#{s.name}.framework"
+  s.tvos.vendored_frameworks = "Carthage/Build/tvOS/#{s.name}.framework"
+  s.watchos.vendored_frameworks = "Carthage/Build/watchOS/#{s.name}.framework"
+  s.ios.vendored_frameworks = "Carthage/Build/iOS/#{s.name}.framework"
+
+  # s.prepare_command = 'carthage build --no-skip-current --platform ios'
   s.prepare_command = <<-CMD
                         mkdir -p Carthage/Build/iOS
-                        ln -s "${TMP_PROJECT_DIR}/Carthage/Build/iOS/ReactiveCocoa.framework" "Carthage/Build/iOS/ReactiveCocoa.framework"
+                        ln -s "${TMP_PROJECT_DIR}/Carthage/Build/iOS/#{s.name}.framework" "Carthage/Build/iOS/#{s.name}.framework"
                       CMD
 
 end

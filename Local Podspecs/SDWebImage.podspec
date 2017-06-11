@@ -27,9 +27,14 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
+    #core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
     core.exclude_files = 'SDWebImage/UIImage+WebP.{h,m}'
     core.tvos.exclude_files = 'SDWebImage/MKAnnotationView+WebCache.*'
+
+    core.osx.vendored_frameworks = "Carthage/Build/macOS/#{s.name}.framework"
+    core.tvos.vendored_frameworks = "Carthage/Build/tvOS/#{s.name}.framework"
+    core.watchos.vendored_frameworks = "Carthage/Build/watchOS/#{s.name}.framework"
+    core.ios.vendored_frameworks = "Carthage/Build/iOS/#{s.name}.framework"
   end
 
   s.subspec 'MapKit' do |mk|
@@ -64,4 +69,16 @@ Pod::Spec.new do |s|
     webp.dependency 'SDWebImage/Core'
     webp.dependency 'libwebp'
   end
+
+  # 使用Carthage打包Framework
+  # s.osx.vendored_frameworks = "Carthage/Build/macOS/#{s.name}.framework"
+  # s.tvos.vendored_frameworks = "Carthage/Build/tvOS/#{s.name}.framework"
+  # s.watchos.vendored_frameworks = "Carthage/Build/watchOS/#{s.name}.framework"
+  # s.ios.vendored_frameworks = "Carthage/Build/iOS/#{s.name}.framework"
+
+  # s.prepare_command = 'carthage build --no-skip-current --platform ios'
+  s.prepare_command = <<-CMD
+                        mkdir -p Carthage/Build/iOS
+                        ln -s "${TMP_PROJECT_DIR}/Carthage/Build/iOS/#{s.name}.framework" "Carthage/Build/iOS/#{s.name}.framework"
+                      CMD
 end
