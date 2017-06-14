@@ -47,6 +47,7 @@
 		22C251371EE5335C007A46BC /* LeoDemo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = LeoDemo.xcconfig; sourceTree = "<group>"; };
 		22C2513C1EE53410007A46BC /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
 		22DADB481EEB8C7800C90D30 /* Presentr.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Presentr.podspec; sourceTree = "<group>"; };
+		22DADB4A1EECC9FD00C90D30 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
 		82A2F5BD2D592B350C79D829 /* Pods-Leo-LeoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leo-LeoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leo-LeoDemo/Pods-Leo-LeoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		89E2786543BF2922A83A7A4F /* Pods_Leo_LeoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leo_LeoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B07D4C8FE7F006C18DBE89 /* Pods-Leo-LeoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leo-LeoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leo-LeoDemo/Pods-Leo-LeoDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				223BF1C01EE69199003E8720 /* Podfile */,
 				223BF1B71EE68BB7003E8720 /* Cartfile */,
 				223BF1B81EE68BB7003E8720 /* Cartfile.resolved */,
+				22DADB4A1EECC9FD00C90D30 /* build_framework.sh */,
 				223BF1BA1EE69137003E8720 /* cpod.sh */,
 				223BF1BB1EE69137003E8720 /* upload.sh */,
 			);
